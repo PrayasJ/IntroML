@@ -10,7 +10,7 @@ export default class Course{
         if(course) return
         try{
             course = await conn.db(dbName).collection("videos")
-            console.log('Successfully connected')
+            console.log('Successfully connected to Courses')
         }
         catch(err){
             console.log(`Unable to establish a collection handle in videos: ${err}`)
